@@ -13,3 +13,7 @@ index下有两个部分，期刊名和期刊具体信息。期刊名用v-for来�
 最后build时由于只需要本地打开index.html就可用，查询资料将config目录下的index.js 中build里对应的assetsPublicPath字段改成了./就ok了。
 
 将最终build的dist也压缩上传了。
+
+# 问题
+目前，是将json文本直接粘进了index.vue中，这明显不太好。除了代码和数据的耦合，尤其感觉用webstorm时就卡了……
+之后应该要改成读取json文件。这样，通过[这里](https://github.com/htxf/muchong_bbs_journals_comments_crawler)的脚本更新json文件，然后展示时也同时更新了。
